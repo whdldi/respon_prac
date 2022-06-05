@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+.mo_menu_open,
+.mo_menu_close
+{display: none;}
+
+
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     padding: 10px 30px;
+     background-color: antiquewhite;
+     flex-wrap: wrap;
+}
+
+nav ul{
+     display: flex;
+}
+nav ul li a {
+     padding: 15px;
+     margin-right:  20px;
+}
+nav ul li:last-child a{
+     margin-right: 0;
+}
+
+/* header end */
+
+
+
+
+.main_wrap{
+     padding: 0px 30px;
+}
+
+.main_visual{
+     background-color: azure;
+     height: 500px;
+}
+
+
+.section1{
+     text-align: center;
+     max-width: 1200px;
+     background-color: aqua;
+     margin: 0 auto;
+     margin-top: 100px;
+}
+.box_wrap{
+     display: flex;
+     justify-content: space-between;
+}
+.section1 div{
+     padding: 0 10px;
+     background-color: rgb(184, 234, 245);
+}
+.section1 div dt{
+     font-size: 1.2rem;
+     font-weight: bold;
+}
+
+/* section 1end */
+
+
+.section2{
+     text-align: center;
+     max-width: 1200px;
+     background-color: rgb(216, 215, 215);
+     margin: 0 auto;
+     margin-top: 100px;
+}
+.section2 p{
+     padding: 0 50px;
+}
+
+/* section 2 end */
+
+footer{
+     text-align: center;
+     background-color: rgb(216, 215, 215);
+     margin: 0 auto;
+     margin-top: 100px;
+     padding: 30px 0;
+}
+
+
+
+@media (max-width: 768px) {
+     header{
+          position: relative;
+          padding: 30px 30px;
+     }
+     .mo_menu_open{
+          position: absolute;
+          top:30px;
+          right: 30px;
+          display: inline-block;
+          font-size: 2.0rem;
+          color: blueviolet;
+     }
+     .mo_menu_close{
+          position: absolute;
+          top:30px;
+          right: 30px;
+          display: inline-block;
+          font-size: 2.0rem;
+          color: blueviolet;
+          display: none;
+     }
+     nav ul{
+          display: none;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 20px;
+     }
+     .logo{
+          width: 100%;
+     }
+     .logo a{
+          display: inline-block;
+     }
+     nav ul li a {
+          padding-left: 0;
+     }
+
+
+     .box_wrap{
+          flex-wrap: wrap;
+     }
+     .box_wrap div{
+          margin: 20px;
+     }
+     .section1 div{
+          padding: 0 0px;
+     }
+     
+
+}
